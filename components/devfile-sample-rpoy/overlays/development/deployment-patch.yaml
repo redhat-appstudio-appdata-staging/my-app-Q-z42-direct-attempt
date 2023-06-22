@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rpoy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-rpoy@sha256:b5323b97b37dccad5d8aeecda76006bf6b97c3d1e2fda8a6b5653d0ba7c8f133
+        name: my-nodejs
+        resources: {}
+status: {}
